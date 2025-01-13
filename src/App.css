@@ -69,17 +69,21 @@
   animation: zoomFromBottomToUp 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
 }
 
-@keyframes zoomOutBackground {
+@keyframes zoomInCenter {
   0% {
-    background-size: 100vw; /* Start with a larger background */
+    background-size: 110vw;      /* Start with a larger background */
+    background-position: "center";/* Ensure initial position is centered */
+    /* opacity: 0;                Optional: slight fade-in effect */
   }
   100% {
-    background-size: 120vw; /* Zoom out to the normal background size */
+    background-size: 120vw;      /* End with a normal background size */
+    background-position: "center";/* Keep the background centered */
+    /* opacity: 1;                  Fully visible */
   }
 }
 
-.bsb-hero-6 {
-  animation: zoomOutBackground 10s ease-out forwards;
+.main-image-zoom {
+  animation: zoomInCenter 10s ease-out forwards;
 }
 
 @media (prefers-reduced-motion: no-preference) {

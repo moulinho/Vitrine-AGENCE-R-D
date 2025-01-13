@@ -69,28 +69,28 @@ function Acceuil() {
           <main>
             {/* <!-- visual/banner of the page --> */}
             <section
-              className=""
+              className="main-image-zoom"
               style={{
                 "--bsb-overlay-opacity": 0.5,
                 backgroundImage: `url('img/big-14.jpg')`,
                 backgroundSize: "cover",
-                backgroundPosition: "-130px 70%",
+                
                 backgroundRepeat: "no-repeat",
                 width: "118vw", // Use 100vw for full width
               }}
             >
-              <div className="container-fluid bsb-hero-6 bsb-overlay pt-5">
+              <div className="container-fluid bsb-hero-6 bsb-overlay pt-5 main-image-zoom">
                 <div className="row justify-content-center align-items-center text-white text-start">
                   <div className="col-12 col-md-11 col-xl-10">
                     {/* Sub-title */}
-                    <h4 className="slider-sub-title text-white fw-bold mb-3">
+                    <h4 className="text-white  mb-5">
                       RECHERCHE & DEVELOPPEMENT. <br /> INTELLIGENCE
-                      ARTIFICIELLE. <br /> COMMUNICATION
+                      ARTIFICIELLE. COMMUNICATION
                     </h4>
 
                     {/* Main title */}
                     <h1
-                      className="slider-main-title text-white fw-bold mb-4"
+                      className="slider-main-title text-white fw-bold mb-4 zoom-animation"
                       style={{ fontSize: "clamp(2rem,7vw, 10rem)" }} // Scales font size based on viewport width
                     >
                       AGENCE R&D
@@ -98,7 +98,7 @@ function Acceuil() {
 
                     {/* Slider text */}
                     <div
-                      className="slider-text text-white mb-5"
+                      className="slider-text text-white mb-3 zoom-animation"
                       style={{ fontSize: "clamp(1rem, 1vw, 1.5rem)" }}
                     >
                       CorreIA LLC est une agence de recherche et développement
@@ -116,7 +116,7 @@ function Acceuil() {
                     </div>
 
                     {/* Button */}
-                    <div className="pt-5">
+                    <div className="pt-5 zoom-from-bottom-to-up">
                       <a href="#!" className="btn btn-primary has-radius-small">
                         Pourquoi nous choisir ?
                       </a>
@@ -213,7 +213,7 @@ function Acceuil() {
                     <Link data-filter=".ui">CorreIA LLM</Link>
                   </li>
                 </ul>
-                <div className="row justify-content-center">
+                <div className="row grid g-4 justify-content-center">
                   {projetItems.map((item) => (
                     <div
                       key={item.id}

@@ -71,13 +71,13 @@
 
 @keyframes zoomInCenter {
   0% {
-    background-size: 110vw;      /* Start with a larger background */
-    background-position: "center";/* Ensure initial position is centered */
+    background-size: 100vw;      /* Start with a larger background */
+    background-position: "-130px center";/* Ensure initial position is centered */
     /* opacity: 0;                Optional: slight fade-in effect */
   }
   100% {
-    background-size: 120vw;      /* End with a normal background size */
-    background-position: "center";/* Keep the background centered */
+    background-size: 105vw;      /* End with a normal background size */
+    background-position: "-130px center";/* Keep the background centered */
     /* opacity: 1;                  Fully visible */
   }
 }

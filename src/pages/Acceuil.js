@@ -76,7 +76,7 @@ function Acceuil() {
                 backgroundSize: "cover",
                 
                 backgroundRepeat: "no-repeat",
-                width: "118vw", // Use 100vw for full width
+                // width: "118vw", // Use 100vw for full width
               }}
             >
               <div className="container-fluid bsb-hero-6 bsb-overlay pt-5 main-image-zoom">

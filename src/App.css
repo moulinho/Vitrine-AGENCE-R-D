@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Show the submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  left: 100%;
+  top: 0;
+}
+
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 200px;
+}
+
+.bsb-hero-6>.row {
+  min-height: 100vh !important;
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Application de l'animation */
+.zoom-animation {
+  animation: zoomIn 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;/* 'forwards' pour garder l'état final de l'animation */
+}
+
+
+/* Zoom from Bottom to Up Animation */
+@keyframes zoomFromBottomToUp {
+  0% {
+    transform: translateY(100%); /* Starts from below and zoomed in */
+    opacity: 0; /* Invisible at the start */
+  }
+  100% {
+    transform: translateY(0); /* Ends at its normal position and size */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.zoom-from-bottom-to-up {
+  animation: zoomFromBottomToUp 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@keyframes zoomOutBackground {
+  0% {
+    background-size: 100vw; /* Start with a larger background */
+  }
+  100% {
+    background-size: 120vw; /* Zoom out to the normal background size */
+  }
+}
+
+.bsb-hero-6 {
+  animation: zoomOutBackground 10s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+
+}
+
+/* .bg-stretch img {
+  max-width: none;
+  width: 270vw;
+  height: 103vh;
+  margin-left: -304.333px;
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

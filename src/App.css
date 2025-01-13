@@ -31,10 +31,9 @@
   min-width: 200px;
 }
 
-.bsb-hero-6>.row {
+.bsb-hero-6 > .row {
   min-height: 100vh !important;
 }
-
 
 @keyframes zoomIn {
   0% {
@@ -49,9 +48,8 @@
 
 /* Application de l'animation */
 .zoom-animation {
-  animation: zoomIn 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;/* 'forwards' pour garder l'état final de l'animation */
+  animation: zoomIn 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; /* 'forwards' pour garder l'état final de l'animation */
 }
-
 
 /* Zoom from Bottom to Up Animation */
 @keyframes zoomFromBottomToUp {
@@ -66,18 +64,19 @@
 }
 
 .zoom-from-bottom-to-up {
-  animation: zoomFromBottomToUp 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  animation: zoomFromBottomToUp 3s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+    forwards;
 }
 
 @keyframes zoomInCenter {
   0% {
-    background-size: 100vw;      /* Start with a larger background */
-    background-position: "-130px center";/* Ensure initial position is centered */
+    background-size: 100vw; /* Start with a larger background */
+    background-position: "-130px center"; /* Ensure initial position is centered */
     /* opacity: 0;                Optional: slight fade-in effect */
   }
   100% {
-    background-size: 105vw;      /* End with a normal background size */
-    background-position: "-130px center";/* Keep the background centered */
+    background-size: 105vw; /* End with a normal background size */
+    background-position: "-130px center"; /* Keep the background centered */
     /* opacity: 1;                  Fully visible */
   }
 }
@@ -90,7 +89,6 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-
 }
 
 /* .bg-stretch img {
@@ -121,5 +119,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.main-section {
+  --bsb-overlay-opacity: 0.5;
+  background-image: url("img/big-14.jpg");
+  background-size: "cover";
+  background-position: "-130px 70%" !important;
+  background-repeat: "no-repeat";
+  width: "100%";
+}
+
+@media  (400px <= width <= 768px) {
+  .main-section {
+    background-position: -770px 30%;
+    width: auto;
+  }
+  .footer-info{
+    margin: 0px 15px;
   }
 }

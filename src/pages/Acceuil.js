@@ -69,24 +69,16 @@ function Acceuil() {
           <main>
             {/* <!-- visual/banner of the page --> */}
             <section
-              className="main-image-zoom"
-              style={{
-                "--bsb-overlay-opacity": 0.5,
-                backgroundImage: `url('img/big-14.jpg')`,
-                backgroundSize: "cover",
-                
-                backgroundRepeat: "no-repeat",
-                // width: "118vw", // Use 100vw for full width
-              }}
+              className="main-section "
             >
-              <div className="container-fluid bsb-hero-6 bsb-overlay pt-5 main-image-zoom">
+              <div className="container-fluid bsb-hero-6 bsb-overlay pt-5">
                 <div className="row justify-content-center align-items-center text-white text-start">
                   <div className="col-12 col-md-11 col-xl-10">
                     {/* Sub-title */}
-                    <h4 className="text-white  mb-5">
-                      RECHERCHE & DEVELOPPEMENT. <br /> INTELLIGENCE
-                      ARTIFICIELLE. COMMUNICATION
-                    </h4>
+                    <h5 className=" text-white fw-bold mb-3">
+                      RECHERCHE & DEVELOPPEMENT. INTELLIGENCE
+                      ARTIFICIELLE. <br /> COMMUNICATION
+                    </h5>
 
                     {/* Main title */}
                     <h1
@@ -98,7 +90,7 @@ function Acceuil() {
 
                     {/* Slider text */}
                     <div
-                      className="slider-text text-white mb-3 zoom-animation"
+                      className="slider-text text-white mb-5 zoom-animation"
                       style={{ fontSize: "clamp(1rem, 1vw, 1.5rem)" }}
                     >
                       CorreIA LLC est une agence de recherche et développement
@@ -213,7 +205,7 @@ function Acceuil() {
                     <Link data-filter=".ui">CorreIA LLM</Link>
                   </li>
                 </ul>
-                <div className="row  g-4 justify-content-center">
+                <div className="row grid g-4 justify-content-center">
                   {projetItems.map((item) => (
                     <div
                       key={item.id}

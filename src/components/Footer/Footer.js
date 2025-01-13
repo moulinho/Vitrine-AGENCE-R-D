@@ -1,20 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router';
+import React from "react";
+import { Link } from "react-router";
 
 const Footer = () => {
-
   const contactInfo = [
     {
       icon: "waituk-icon-phone",
       title: "Call Us On",
-      value: "977 985 1108896",
-      link: "tel:9779851108896",
+      value: (
+        <>
+          <a className="link-secondary" href="tel:9779851108896">
+            977 985 1108896
+          </a>
+        </>
+      ),
     },
     {
       icon: "waituk-icon-email",
       title: "Email Us At",
-      value: "Email at Waituk.net",
-      link: "mailto:waituk.net",
+      value: (
+        <>
+          Email at{" "}
+          <a className="link-secondary" href="mailto:waituk.net">
+            Waituk.net
+          </a>{" "}
+        </>
+      ),
     },
     {
       icon: "waituk-icon-pin",
@@ -25,9 +35,14 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: "/img/facebooks.svg", link: "https://web.facebook.com/CorreiaLLC" },
-    { icon: "/img/whatsapps.svg", link: "https://wa.me/message/R2AN3TFJCKDHM1" },
-    { icon: '/img/linkedin.svg', link: "https://www.linkedin.com/company/104069378/admin/dashboard/" },
-
+    {
+      icon: "/img/whatsapps.svg",
+      link: "https://wa.me/message/R2AN3TFJCKDHM1",
+    },
+    {
+      icon: "/img/linkedin.svg",
+      link: "https://www.linkedin.com/company/104069378/admin/dashboard/",
+    },
   ];
   return (
     <footer className="footer footer-v1">
@@ -56,26 +71,20 @@ const Footer = () => {
           {/* Contact Info */}
 
           <div className="content-block footer-info">
-            <div className="row text-left">
+            <div className="row text-left ">
               {contactInfo.map((info, index) => (
-                <div className="col-12 col-md-4 mb-3" key={index}>
-                  <div className="row align-items-center fw-bold">
-                    {/* Icon column with auto width */}
-                    <div className="col-auto">
+                <div className="col-12 col-sm-6 col-md-4 mb-4" key={index}>
+                  <div className="d-flex align-items-center">
+                    {/* Icon column */}
+                    <div className="icon-wrapper me-3">
                       <span
                         className={`social-network icon ${info.icon}`}
                       ></span>
                     </div>
-                    {/* Text column takes remaining space */}
-                    <div className="col">
-                      <span>{info.title}</span> <br />
-                      {info.link ? (
-                        <span>
-                          <Link to={info.link}>{info.value}</Link>
-                        </span>
-                      ) : (
-                        <span>{info.value}</span>
-                      )}
+                    {/* Text content */}
+                    <div>
+                      <strong>{info.title}</strong> <br />
+                      <span>{info.value}</span>
                     </div>
                   </div>
                 </div>
@@ -88,20 +97,20 @@ const Footer = () => {
             {socialLinks.map((social, index) => (
               <li key={index}>
                 <Link to={social.link}>
-                <img src={social.icon} alt={social.icon} width={35} />
+                  <img src={social.icon} alt={social.icon} width={35} />
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
-    {/* <div className="footer-bottom text-center">
+      {/* <div className="footer-bottom text-center">
       <div className="container">
         <p>Copyright 2016 - Roxine - Multi Purpose Theme by Waituk </p>
       </div>
     </div> */}
-  </footer>  
-  )
-}
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

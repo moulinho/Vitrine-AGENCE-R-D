@@ -213,7 +213,7 @@ function Acceuil() {
                     <Link data-filter=".ui">CorreIA LLM</Link>
                   </li>
                 </ul>
-                <div className="row grid g-4 justify-content-center">
+                <div className="row justify-content-center">
                   {projetItems.map((item) => (
                     <div
                       key={item.id}

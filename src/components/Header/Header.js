@@ -99,7 +99,7 @@ const Header = () => {
                 <li className="dropdown" data-animation="fadeIn">
                   <Link
                     to="/"
-                    className="dropdown-toggle fw-bolder"
+                    className="dropdown-toggle fw-semibolder "
                     data-toggle="dropdown"
                     href="index-2.html"
                     data-title="Home"
@@ -110,7 +110,7 @@ const Header = () => {
                 </li>
             
                 <li className="dropdown" data-animation="fadeIn">
-                  <Link className="dropdown-toggle fw-bolder" data-toggle="dropdown">
+                  <Link className="dropdown-toggle fw-semibolder " data-toggle="dropdown">
                   Notre Identité 
                   </Link>
                   <ul className="dropdown-menu no-border-radius">
@@ -123,7 +123,7 @@ const Header = () => {
                             : ""
                         }
                       >
-                        <Link className="sub-marker fw-bolder" to={item.href}>
+                        <Link className="sub-marker fw-semibolder " to={item.href}>
                           {item.label}
                           {item.subItems && (
                             <i className="waituk-icon-ios-more icn-right"></i>
@@ -133,7 +133,7 @@ const Header = () => {
                           <ul className="dropdown-menu dropdown-menu-indent-sm no-border-radius">
                             {item.subItems.map((subItem, subIndex) => (
                               <li key={subIndex}>
-                                <Link className="fw-bolder" href={subItem.href}>{subItem.label}</Link>
+                                <Link className="fw-semibolder " href={subItem.href}>{subItem.label}</Link>
                               </li>
                             ))}
                           </ul>
@@ -143,12 +143,12 @@ const Header = () => {
                   </ul>
                 </li>
                 <li >
-                  <Link className="fw-bolder"  to="/services"> Services </Link>
+                  <Link className="fw-semibolder "  to="/services"> Services </Link>
                 </li>
                 <li className="dropdown" data-animation="fadeIn">
                   <Link
                     to='/projets'
-                  className="dropdown-toggle fw-bolder" data-toggle="dropdown"
+                  className="dropdown-toggle fw-semibolder " data-toggle="dropdown"
                   >
                     Projects
                   </Link>
@@ -158,7 +158,7 @@ const Header = () => {
                         key={index}
                         className="dropdown dropdown-right dropdown-parent"
                       >
-                        <Link className="sub-marker fw-bolder" to={menu.path}>
+                        <Link className="sub-marker fw-semibolder " to={menu.path}>
                           {menu.title}
                         </Link>
                       
@@ -168,27 +168,27 @@ const Header = () => {
                 </li>
 
                 <li>
-                  <Link to="/team" className="fw-bolder"> Équipes </Link>
+                  <Link to="/team" className="fw-semibolder "> Équipes </Link>
                 </li>
                 <li className="dropdown">
                   <Link
-                    className="dropdown-toggle fw-bolder"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                    className="dropdown-toggle fw-semibolder "
+                    to="/blog"
+                    // role="button"
+                    // data-bs-toggle="dropdown"
+                    // aria-expanded="false"
                   >
                     Blog & actualités
                   </Link>
-                  <ul className="dropdown-menu no-border-radius">
+                  {/* <ul className="dropdown-menu no-border-radius">
                     {menuItems.map((item, index) => (
                       <li key={index}>
-                        <Link className="dropdown-item fw-bolder" to={item.path}>
+                        <Link className="dropdown-item fw-semibolder " to={item.path}>
                           {item.label}
                         </Link>
                       </li>
                     ))}
-                  </ul>
+                  </ul> */}
                 </li>
                 {/* Portfolio Dropdown */}
                 {/* <li className="dropdown" data-animation="fadeIn">
@@ -262,7 +262,7 @@ const Header = () => {
                 
 
                 <li>
-                  <Link className="fw-bolder" to='/contact'> Contact </Link>
+                  <Link className="fw-semibolder " to='/contact'> Contact </Link>
                 </li>
                
               </ul>

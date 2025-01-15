@@ -18,8 +18,7 @@ import Projects from "./pages/Projects/Projects";
 import ProjectCorreIALLM from "./pages/Projects/detailProjects/ProjectCorreIALLM";
 import ProjectGilui from "./pages/Projects/detailProjects/ProjectGilui";
 import Contact from "./pages/Contact";
-
-
+import Blogs from "./pages/Blogs";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
         path: "team",
         element: <Team />,
       },
-     
+
       {
         path: "Engagement",
         element: <Engagements />,
@@ -48,43 +47,49 @@ const router = createBrowserRouter([
         element: <Enjeux />,
       },
       {
-        path:'ADN',
+        path: "ADN",
         element: <ADN />,
       },
       {
-        path:'vision',
+        path: "vision",
         element: <Visions />,
       },
       {
-        path:'mission',
+        path: "mission",
         element: <Missions />,
-      }
-      ,
-      {
-        path:'valeur',
-        element: <Valeurs />,
-      }
-      ,
-      {
-        path:'services',
-        element: <Services/>,
-      }
-      ,
-      {
-        path:'projets',
-        element: <Projects/>,
       },
       {
-        path:'correIa_LLM',
-        element: <ProjectCorreIALLM/>,
-      }, {
-        path:'gilui',
-        element: <ProjectGilui/>,
-      }
-      , {
-        path:'contact',
-        element: <Contact/>,
-      }
+        path: "valeur",
+        element: <Valeurs />,
+      },
+      {
+        path: "services",
+        element: <Services />,
+      },
+      {
+        path: "projets",
+        element: <Projects />,
+      },
+      {
+        path: "correIa_LLM",
+        element: <ProjectCorreIALLM />,
+      },
+      {
+        path: "gilui",
+        element: <ProjectGilui />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "blog",
+        element: <Blogs />,
+      },
+      {
+        path: "*",
+        element: <div>Page not found</div>,
+      },
       // {
       //   path: "contact",
       //   element: <Contact />,
@@ -123,14 +128,13 @@ const router = createBrowserRouter([
       //   element: <Inventory />,
       // },
       // {
-      //   path: "*", 
-      //   element: <NotFound/>, 
+      //   path: "*",
+      //   element: <NotFound/>,
       // }
     ],
     future: {
       v7_partialHydration: true,
     },
-    
   },
   // {
   //   path: "/",
@@ -160,11 +164,8 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-
-    <RouterProvider router={router} />
-</div>
-    
-    
+      <RouterProvider router={router} />
+    </div>
   );
 }
 

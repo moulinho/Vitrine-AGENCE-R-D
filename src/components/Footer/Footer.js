@@ -5,31 +5,32 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: "waituk-icon-phone",
-      title: "Call Us On",
+      title: "Appelez-nous",
       value: (
         <>
-          <a className="link-secondary" href="tel:9779851108896">
-            977 985 1108896
+          <a className="link-secondary" href="tel:0101210208">
+          +33 (7) 75 707 722 <br/> +225 (01) 01 210 208
           </a>
         </>
       ),
     },
     {
       icon: "waituk-icon-email",
-      title: "Email Us At",
+      title: "Envoyez-nous un e-mail à",
       value: (
         <>
-          Email at{" "}
-          <a className="link-secondary" href="mailto:waituk.net">
-            Waituk.net
+          <a className="link-secondary" href="mailto:rd@correia.ai">
+          rd@correia.ai
           </a>{" "}
         </>
       ),
     },
     {
       icon: "waituk-icon-pin",
-      title: "Visit Office",
-      value: "707 Ive Corner - London",
+      title: "CorreIA LLC",
+      value: (<>
+       CorreIA LLC 61 rue de Lyon, <br/> 75012 Paris, France
+      </>),
     },
   ];
 
@@ -74,15 +75,17 @@ const Footer = () => {
             <div className="row text-left ">
               {contactInfo.map((info, index) => (
                 <div className="col-12 col-sm-6 col-md-4 mb-4" key={index}>
-                  <div className="d-flex align-items-center">
+                  <div className="row  justify-content-center align-items-center">
                     {/* Icon column */}
-                    <div className="icon-wrapper me-3">
-                      <span
+                    <div className="col-1 icon-wrapper">
+                      <div
                         className={`social-network icon ${info.icon}`}
-                      ></span>
+                      >
+
+                      </div>
                     </div>
                     {/* Text content */}
-                    <div>
+                    <div className="col">
                       <strong>{info.title}</strong> <br />
                       <span>{info.value}</span>
                     </div>
@@ -93,7 +96,7 @@ const Footer = () => {
           </div>
 
           {/* Social Networks */}
-          <ul className="social-network d-flex gap-3 justify-content-center">
+          <ul className="social-network text-gray d-flex gap-3 justify-content-center">
             {socialLinks.map((social, index) => (
               <li key={index}>
                 <Link to={social.link}>

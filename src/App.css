@@ -32,7 +32,7 @@
 }
 
 .bsb-hero-6 > .row {
-  min-height: 100vh !important;
+  min-height:48em;
 }
 
 @keyframes zoomIn {
@@ -68,22 +68,7 @@
     forwards;
 }
 
-@keyframes zoomInCenter {
-  0% {
-    background-size: 100vw; /* Start with a larger background */
-    background-position: "-130px center"; /* Ensure initial position is centered */
-    /* opacity: 0;                Optional: slight fade-in effect */
-  }
-  100% {
-    background-size: 105vw; /* End with a normal background size */
-    background-position: "-130px center"; /* Keep the background centered */
-    /* opacity: 1;                  Fully visible */
-  }
-}
 
-.main-image-zoom {
-  animation: zoomInCenter 10s ease-out forwards;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -122,21 +107,55 @@
   }
 }
 
+
+
+
+@keyframes zoomInCenter {
+  0% {
+    background-size: 100vw 110vh; /* Start with a larger background */
+    background-position:center; /* Ensure initial position is centered */
+    /* opacity: 0;                Optional: slight fade-in effect */
+  }
+  100% {
+    background-size: 105vw 115vh; /* End with a normal background size */
+    background-position:  center; /* Keep the background centered */
+    /* opacity: 1;                  Fully visible */
+  }
+}
+
 .main-section {
   --bsb-overlay-opacity: 0.5;
   background-image: url("img/big-14.jpg");
-  background-size: "cover";
-  background-position: "-130px 70%" !important;
-  background-repeat: "no-repeat";
-  width: "100%";
+  background-size: cover; /* Ajuste l'image pour couvrir tout l'élément */
+  background-position: center center; /* Centre l'image horizontalement et verticalement */
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh; /* Hauteur de l'écran */
+  animation: zoomInCenter 10s ease-out forwards;
 }
 
-@media  (400px <= width <= 768px) {
+@media (max-width: 768px) {
   .main-section {
-    background-position: -770px 30%;
-    width: auto;
+    
+    background-position: center center; /* Centre l'image également sur mobile */
+    background-size: cover !important; /* Assure que l'image reste bien en cover */
+    height: auto; /* Permet à la section de s'adapter au contenu */
+
   }
-  .footer-info{
-    margin: 0px 15px;
+  
+  .footer-info {
+    margin: 0 15px;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 }
+

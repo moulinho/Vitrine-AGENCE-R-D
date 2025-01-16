@@ -8,7 +8,7 @@ export default function Blogs() {
       image: "img/img-30.jpg",
       date: "17 Jun",
       title: "CorreIA LLC : Genèse et Fondation",
-     
+
       description: (
         <>
           Fondée <span className="fw-bold">le 14 mai 2024 à Paris</span> ,
@@ -101,9 +101,94 @@ export default function Blogs() {
       id: 2,
       image: "img/img-31.jpg",
       date: "17 Jun",
-      title: "Product Design",
-      description:
-        "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum.",
+      title: "L'ADN de CorreIA LLC : Signification des lettres de notre logo",
+
+      description: (
+        <>
+          Le logo de CorreIA LLC est une œuvre d'art visuelle qui incarne
+          l'essence même de l'entreprise. Chaque lettre a été conçue avec une
+          intention précise, reflétant les valeurs et la mission de la société.
+          <br />{" "}
+          <span className="fw-bold">
+            La lettre "C" : Le réceptacle de l'innovation
+          </span>
+          . <br />
+          La forme ouverte et incurvée du "C" symbolise un espace accueillant où
+          convergent idées, talents et ressources créatives. Elle incarne un
+          réservoir dynamique, prêt à transformer ces éléments en solutions
+          concrètes, illustrant ainsi la vision de CorreIA LLC en tant
+          qu’entreprise innovante et adaptable. <br />
+          <span className="fw-bold">
+            La lettre "O" : Dépasser les limites et embrasser le paradoxe
+          </span>
+          . <br />
+          Le "O" débordant et ouvert représente la volonté de contourner les
+          frontières et de repousser les limites conventionnelles. Il incarne
+          l'approche de l'entreprise, qui fusionne des éléments apparemment
+          opposés pour créer des solutions uniques et efficaces, tout en restant
+          fidèle à des valeurs humaines et éthiques. <br />
+          <span className="fw-bold">
+            Les lettres "R" inachevées : Mouvement perpétuel et ouverture
+          </span>
+          Les "R" volontairement inachevés symbolisent un mouvement perpétuel,
+          évoquant l’idée que l’innovation et la création sont des processus
+          évolutifs et continus. Cette incomplétude souligne la flexibilité et
+          la quête constante de progrès de CorreIA LLC, toujours en recherche de
+          nouvelles solutions et d’améliorations. <br />
+          <span className="fw-bold">
+            La lettre "E" : Activation et transformation "
+          </span>{" "}
+          La structure du "E", avec ses trois barres horizontales et sa ligne
+          verticale, évoque une activation de processus. Elle représente le
+          potentiel de l’entreprise à initier des changements significatifs,
+          transformant des idées en réalisations concrètes grâce à des processus
+          de recherche et développement innovants. . <br />
+          <span className="fw-bold">
+            La lettre "I" : L’humain au cœur de l’innovation et du développement
+            durable
+          </span>
+          Le "i" incarne l'importance de l’humain dans le processus
+          d'innovation. Le point au sommet symbolise l’étincelle d'idées,
+          reflétant l’engagement de CorreIA LLC à placer l’humain et la
+          durabilité au centre de ses projets, en développant des solutions
+          technologiques répondant aux valeurs humaines et environnementales.{" "}
+          <br />
+          <span className="fw-bold">
+            La lettre "A" : Ouverture à la créativité et souffle d’innovation
+          </span>{" "}
+          La forme ouverte du "a" symbolise une porte accueillant un{" "}
+          <span className="fw-bold"> souffle créatif</span>. Ce souffle
+          représente les idées nouvelles et l’énergie qui poussent l’entreprise
+          à constamment se renouveler, explorant de nouvelles solutions et
+          repoussant les limites de la technologie.
+          <br />
+          <span className="fw-bold">
+            Les rayures en filigrane : Profondeur et complexité
+          </span>{" "}
+          .<br />
+          Les rayures subtiles en arrière-plan ajoutent une dimension de
+          profondeur, symbolisant les multiples couches d'innovation et la
+          complexité des défis que l’entreprise s’efforce de relever. Elles
+          reflètent la richesse des projets menés et l’interconnexion des idées
+          au sein de CorreIA LLC.
+          <br />
+          <span className="fw-bold">
+            Motifs africains : Métissage et ancrage culturel
+          </span>{" "}
+          <br />
+          Les motifs africains intégrés dans le logo rendent hommage à la
+          richesse culturelle du continent africain. Ils symbolisent
+          l’interconnexion des cultures et des idées, mettant en avant
+          l'importance de la diversité et de l'inclusivité, éléments
+          fondamentaux de l’identité de CorreIA LLC. <br />
+          En somme, le logo de CorreIA LLC est une représentation visuelle riche
+          et complexe, reflétant l'engagement de l'entreprise envers
+          l'innovation, l'humain, et le métissage culturel, tout en symbolisant
+          sa mission de transformer des idées en solutions concrètes et
+          durables.
+        </>
+      ),
+
       contact: [
         {
           icon: (
@@ -127,9 +212,45 @@ export default function Blogs() {
       id: 3,
       image: "img/img-32.jpg",
       date: "17 Jun",
-      title: "Product Design",
-      description:
-        "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum.",
+      title: "Projet R&D : abrand News Magazine",
+
+      description: (
+        <>
+          Dans un monde où l’information se diffuse en un instant et disparaît
+          tout aussi vite, <i> abrand News - Mag</i> se distingue en prenant le
+          temps de révéler l'essence de chaque organisation. Plus qu'un simple
+          magazine, nous créons une immersion totale, un espace où chaque
+          entreprise, chaque collectivité, et chaque acteur social ou culturel a
+          l’opportunité de partager son histoire, ses valeurs et son impact en
+          profondeur.
+          <br /> Avec <i> abrand News - Mag</i>, nous réinventons la façon de
+          communiquer et de découvrir les organisations, loin des formats
+          d’actualité éphémères et des discours figés. Ici, l’authenticité est
+          au cœur de chaque page. Nous plongeons dans l’ADN de nos partenaires
+          pour explorer leurs parcours, leurs engagements, et leurs
+          réalisations. En intégrant des interviews exclusives, des reportages
+          immersifs et des contributions d’experts, nous offrons une perspective
+          à 360 degrés, qui redéfinit la notion de transparence et valorise le
+          dialogue avec le public. . <br />
+          Ce premier numéro, consacré à CorreIA LLC, incarne parfaitement notre
+          ambition. CorreIA LLC est une entreprise où la rencontre des cultures
+          françaises et africaines ne se limite pas à des mots, mais se traduit
+          par des projets concrets, des créations graphiques uniques, et des
+          valeurs profondément ancrées dans le changement social. À travers les
+          pages de ce numéro, vous découvrirez l’histoire d’une startup qui
+          fusionne tradition et innovation pour façonner un avenir durable en
+          France et en Côte d’Ivoire.
+          <br />
+          Nous croyons fermement que chaque organisation a un rôle essentiel à
+          jouer et mérite d’être mise en lumière pour inspirer et fédérer. En
+          devenant la voix et l’écho de ceux qui œuvrent pour le progrès,{" "}
+          <i> abrand News - Mag</i> fait bien plus que raconter des histoires ;
+          il façonne la perception de l’impact social et économique de ces
+          acteurs sur la société, faisant de chaque organisation la une de
+          demain !
+        </>
+      ),
+
       contact: [
         {
           icon: (
@@ -153,9 +274,58 @@ export default function Blogs() {
       id: 4,
       image: "img/img-33.jpg",
       date: "17 Jun",
-      title: "Product Design",
-      description:
-        "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Auctor, nisi elit consequat ipsum.",
+      title:
+        "1er prix, CorreIA LLC récompensée pour son projet Gilui.ai par le Club Abidjan Ville Durable",
+      description: (
+        <>
+          <span className="fw-bold">Communiqué officiel de CorreIA LLC</span>{" "}
+          <br />
+          Paris, France – Décembre 2024, Nous sommes ravis d’annoncer que
+          <span className="fw-bold">CorreIA LLC</span> a été distinguée en tant
+          que lauréat de l’édition 2024 du
+          <span className="fw-bold">
+            Concours Initiatives Ville Durable (CIVD)
+          </span>
+          , organisé par le{" "}
+          <span className="fw-bold">Club Abidjan Ville Durable</span>. Cette
+          reconnaissance prestigieuse met en lumière notre projet phare,{" "}
+          <span className="fw-bold">Gilui.ai</span> , conçu pour transformer la
+          gestion énergétique en Côte d’Ivoire.
+          <span className="fw-bold">
+            {" "}
+            À propos de Gilui.ai : Une solution innovante pour une gestion
+            énergétique durable Gilui.ai
+          </span>
+          est une plateforme innovante qui digitalise l’utilisation des
+          compteurs d’électricité. Ce projet répond à des enjeux cruciaux en
+          matière de gestion énergétique, offrant une précision accrue dans les
+          relevés, une transparence dans la facturation et une capacité
+          d’adaptation aux besoins réels des consommateurs. <br />
+          Notre objectif est simple mais ambitieux : moderniser les
+          infrastructures énergétiques de la Côte d’Ivoire pour offrir une
+          expérience utilisateur améliorée, tout en optimisant la répartition
+          des ressources et en favorisant des comportements éco-responsables.
+          <br />
+          <span className="fw-bold">
+            Un accompagnement institutionnel pour concrétiser notre vision
+          </span>{" "}
+          <br />
+          En tant que lauréat, nous aurons l’honneur de bénéficier du soutien
+          institutionnel du Club Abidjan Ville Durable en 2025. Cet accompagnement précieux inclut :
+        <ul>
+          <li>
+          Un accès à un écosystème de partenaires stratégiques pour renforcer l'impact de notre projet.
+
+          </li>
+          <li>
+          Un appui dans la structuration et le déploiement de Gilui.ai.
+          </li>
+       
+        </ul>
+         
+        
+        </>
+      ),
       contact: [
         {
           icon: (

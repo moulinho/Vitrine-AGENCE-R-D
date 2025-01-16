@@ -1187,9 +1187,9 @@ body {
 	margin-top: -23px;
 }
 
-/* .mega-menus .dropdown-menu > li.dropdown-wide > a.car-1:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-2:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-3:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-4:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-5:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-6:before {
+.mega-menus .dropdown-menu > li.dropdown-wide > a.car-1:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-2:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-3:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-4:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-5:before,.mega-menus .dropdown-menu > li.dropdown-wide > a.car-6:before {
 	background-image: url('../../img/car.html');
-} */
+}
 
 .mega-menus .dropdown-menu > li.dropdown-wide > a.car-1:before {
 	background-position: 80px -3px;

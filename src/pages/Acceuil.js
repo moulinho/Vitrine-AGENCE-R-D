@@ -69,20 +69,20 @@ function Acceuil() {
           <main>
             {/* <!-- visual/banner of the page --> */}
             <section
-              className="main-section "
+              className="main-section"
             >
               <div className="container-fluid bsb-hero-6 bsb-overlay pt-5">
                 <div className="row justify-content-center align-items-center text-white text-start">
                   <div className="col-12 col-md-11 col-xl-10">
                     {/* Sub-title */}
                     <h5 className=" text-white fw-bold mb-3">
-                      RECHERCHE & DEVELOPPEMENT. INTELLIGENCE
-                      ARTIFICIELLE. <br /> COMMUNICATION
+                      RECHERCHE & DEVELOPPEMENT. <br/> INTELLIGENCE
+                      ARTIFICIELLE. COMMUNICATION
                     </h5>
 
                     {/* Main title */}
                     <h1
-                      className="slider-main-title text-white fw-bold mb-4 zoom-animation"
+                      className="slider-main-title text-white mb-0 fw-bold zoom-animation"
                       style={{ fontSize: "clamp(2rem,7vw, 10rem)" }} // Scales font size based on viewport width
                     >
                       AGENCE R&D
@@ -90,7 +90,7 @@ function Acceuil() {
 
                     {/* Slider text */}
                     <div
-                      className="slider-text text-white mb-5 zoom-animation"
+                      className="slider-text text-white mb-3 zoom-animation"
                       style={{ fontSize: "clamp(1rem, 1vw, 1.5rem)" }}
                     >
                       CorreIA LLC est une agence de recherche et développement
@@ -205,7 +205,7 @@ function Acceuil() {
                     <Link data-filter=".ui">CorreIA LLM</Link>
                   </li>
                 </ul>
-                <div className="row grid g-4 justify-content-center">
+                <div className="row  g-4 justify-content-center">
                   {projetItems.map((item) => (
                     <div
                       key={item.id}

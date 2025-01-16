@@ -66,7 +66,7 @@ export default function Detail({ project }) {
             </div>
 
             {/* Project Details */}
-            <div className="portfolio-des top-space text-left fs-5">
+            <div className="portfolio-des top-space text-left ">
               <div className="row">
                 <div className="col-lg-6 bottom-space-medium-only">
                   <ul className="content-list info-list">

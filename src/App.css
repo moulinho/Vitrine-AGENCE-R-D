@@ -32,7 +32,7 @@
 }
 
 .bsb-hero-6 > .row {
-  min-height:48em;
+  height:730px;
 }
 
 @keyframes zoomIn {
@@ -159,3 +159,8 @@
   }
 }
 
+@media only screen and (min-width: 1230px) {
+  .work-block {
+      min-height: 1100px;
+  }
+}

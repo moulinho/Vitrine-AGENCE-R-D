@@ -10201,7 +10201,7 @@ a.full-width-icon:hover .social-text {
 .bg-stretch .cultiver {
 	max-width: none;
 	width: 100vw;
-    height: 120vh;
+    height: 130vh;
     object-fit: cover;
 
 }
@@ -13326,6 +13326,7 @@ pre {
 		width: 100vw;
 		height: 100vh;
 		object-fit: cover;
+		padding: 25px 0px;
 	
 	}
 }

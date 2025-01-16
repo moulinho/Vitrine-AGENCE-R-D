@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
       value: (
         <>
           <a className="link-secondary" href="tel:0101210208">
-          +33 (7) 75 707 722 <br/> +225 (01) 01 210 208
+            +33 (7) 75 707 722 <br /> +225 (01) 01 210 208
           </a>
         </>
       ),
@@ -20,7 +20,7 @@ const Footer = () => {
       value: (
         <>
           <a className="link-secondary" href="mailto:rd@correia.ai">
-          rd@correia.ai
+            rd@correia.ai
           </a>{" "}
         </>
       ),
@@ -28,9 +28,11 @@ const Footer = () => {
     {
       icon: "waituk-icon-pin",
       title: "CorreIA LLC",
-      value: (<>
-       CorreIA LLC 61 rue de Lyon, <br/> 75012 Paris, France
-      </>),
+      value: (
+        <>
+          CorreIA LLC 61 rue de Lyon, <br /> 75012 Paris, France
+        </>
+      ),
     },
   ];
 
@@ -45,19 +47,36 @@ const Footer = () => {
       link: "https://www.linkedin.com/company/104069378/admin/dashboard/",
     },
   ];
+
+  const [formData, setFormData] = useState({ subscribe: "" });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
+
   return (
     <footer className="footer footer-v1">
       <div className="content-block footer-main text-center bg-black">
         <div className="container">
           {/* Newsletter Form */}
           <div className="waituk_newsletter-form">
-            <form action="#" method="post">
+            <form  onSubmit={handleSubmit}>
               <fieldset className="clearfix">
                 <div className="form-group input-holder">
                   <input
                     type="email"
+
                     className="form-control"
                     placeholder="Email Address"
+                    name="newsletter"
+                    value={formData.newsletter}
+                    onChange={handleChange}
                   />
                 </div>
                 <input
@@ -78,11 +97,7 @@ const Footer = () => {
                   <div className="row  justify-content-center align-items-center">
                     {/* Icon column */}
                     <div className="col-1 icon-wrapper">
-                      <div
-                        className={`social-network icon ${info.icon}`}
-                      >
-
-                      </div>
+                      <div className={`social-network icon ${info.icon}`}></div>
                     </div>
                     {/* Text content */}
                     <div className="col">

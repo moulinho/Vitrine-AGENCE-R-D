@@ -8,49 +8,56 @@ function Acceuil() {
   const teamMembers = [
     {
       id: 1,
-      name: "Jason Stratham",
-      role: "UI/UX Guru",
+      name: "Matou FATY",
+      role: "Co-fondatrice, Développeuse d’applications et analyste de données",
       img: "/img/team-01.jpg",
     },
     {
       id: 2,
-      name: "Jessica Fizovic",
-      role: "UI/UX Guru",
+      name: "Martin CORREIA (Livrit)",
+      role: "PDG, Directeur de la politique de Recherche & Développement (R&D)",
       img: "/img/team-02.jpg",
     },
-    { id: 3, name: "James Nass", role: "UI/UX Guru", img: "/img/team-03.jpg" },
+    { id: 3, name: "Sékou BAMBA", 
+      role: "Co-fondateur, spécialiste en analyse de données",
+      img: "/img/team-03.jpg" },
   ];
 
   const infoItems = [
     {
       icon: "/img/education.svg",
-      title: 'Formation en IA',
-      description: ' Renforcement des capacités des entreprises & PME sur l’intelligence artificielle (IA)',
-      link: '#',
+      title: "Formation en IA",
+      description:
+        " Renforcement des capacités des entreprises & PME sur l’intelligence artificielle (IA)",
+      link: "#",
     },
     {
-      icon: '/img/marketing.svg',
-      title: 'Communication et Marketing Digital',
-      description: 'Élaboration de stratégie de communication, Marketing digital et créations graphiques.',
-      link: '#',
+      icon: "/img/marketing.svg",
+      title: "Communication et Marketing Digital",
+      description:
+        "Élaboration de stratégie de communication, Marketing digital et créations graphiques.",
+      link: "#",
     },
     {
-      icon: '/img/good-idea.svg',
-      title: 'Recherche & Développement (R&D)',
-      description: 'Accompagnement en innovation. Service R&D externalisé pour les entreprises & PME',
-      link: '#',
+      icon: "/img/good-idea.svg",
+      title: "Recherche & Développement (R&D)",
+      description:
+        "Accompagnement en innovation. Service R&D externalisé pour les entreprises & PME",
+      link: "#",
     },
     {
-      icon: '/img/chip-ai.svg',
-      title: 'Solutions technologiques basées sur l’IA',
-      description: 'Automatisation et optimisation des processus métiers grâce aux outils d’intelligence artificielle (IA)',
-      link: '#',
+      icon: "/img/chip-ai.svg",
+      title: "Solutions technologiques basées sur l’IA",
+      description:
+        "Automatisation et optimisation des processus métiers grâce aux outils d’intelligence artificielle (IA)",
+      link: "#",
     },
     {
-      icon: '/img/data-center.svg',
-      title: 'Analyse et traitement de données',
-      description: 'Accompagnement les organisations dans l’exploitation de leurs données.',
-      link: '#',
+      icon: "/img/data-center.svg",
+      title: "Analyse et traitement de données",
+      description:
+        "Accompagnement les organisations dans l’exploitation de leurs données.",
+      link: "#",
     },
   ];
   const projetItems = [
@@ -68,15 +75,13 @@ function Acceuil() {
         <div className="page-wrapper">
           <main>
             {/* <!-- visual/banner of the page --> */}
-            <section
-              className="main-section"
-            >
+            <section className="main-section">
               <div className="container-fluid bsb-hero-6 bsb-overlay pt-5">
                 <div className="row justify-content-center align-items-center text-white text-start">
                   <div className="col-12 col-md-11 col-xl-10">
                     {/* Sub-title */}
                     <h5 className=" text-white fw-bold mb-3">
-                      RECHERCHE & DEVELOPPEMENT. <br/> INTELLIGENCE
+                      RECHERCHE & DEVELOPPEMENT. <br /> INTELLIGENCE
                       ARTIFICIELLE. COMMUNICATION
                     </h5>
 
@@ -153,8 +158,11 @@ function Acceuil() {
                         <div className="col-wrap">
                           <div className="ico-box bg-gray-light text-center">
                             <div className="icon mb-3">
-                            <img src={item.icon} alt={item.title} width={35} />
-
+                              <img
+                                src={item.icon}
+                                alt={item.title}
+                                width={35}
+                              />
                             </div>
                             <h4>
                               <a href={item.link}>{item.title}</a>
@@ -193,7 +201,10 @@ function Acceuil() {
                   </div>
                 </div>
               </section>
-              <section className="content-block portfolio-block pb-0" id="container">
+              <section
+                className="content-block portfolio-block pb-0"
+                id="container"
+              >
                 <div className="block-heading bottom-space text-center text-uppercase">
                   <h2>Projets</h2>
                 </div>
@@ -216,7 +227,7 @@ function Acceuil() {
                           src={item.img}
                           alt="Gallery item"
                           // className="img-fluid" // Ensures image responsiveness
-                          style={{objectFit: 'cover'}}
+                          style={{ objectFit: "cover" }}
                         />
                         <figcaption>
                           <div className="link-box d-flex justify-content-center gap-3">
@@ -392,7 +403,7 @@ function Acceuil() {
                 </div>
               </section>
 
-              <section className="content-block">
+              <section className="content-block pt-0">
                 <div className="container">
                   <div className="block-heading bottom-space">
                     <h3>QUI SOMMES-NOUS</h3>

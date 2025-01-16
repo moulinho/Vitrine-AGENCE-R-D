@@ -95,7 +95,7 @@ const Team = () => {
                 discovery.
               </p>
             </div> */}
-            <div className="row justify-content-evenly gap-1 fs-5 text-left">
+            <div className="row justify-content-evenly gap-1  text-left">
               {dataTeam.map((teamMember, index) => (
                 <div className="col-md-3" key={index}>
                   <figure className="team-box caption-fade-up top-l-space">
@@ -106,11 +106,11 @@ const Team = () => {
                       />
                     </div>
                     <figcaption className="team-des-v2">
-                      <span className="sub fw-bold fs-5">{teamMember.role}</span>
+                      <span className="sub fw-semibold ">{teamMember.role}</span>
                       <strong className="content-title name">
                         {teamMember.name}
                       </strong>
-                      <p>{teamMember.desc}</p>
+                      <div>{teamMember.desc}</div>
                     </figcaption>
                   </figure>
                 </div>

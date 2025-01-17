@@ -1207,15 +1207,10 @@ export default function Blogs() {
           <div className="container">
             <div className="visual-text-large text-left visual-center">
               <div className="visual-title">
-                <h1>Blog - Two Column</h1>
+                <h1>Blog & Actualités               </h1>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
-                porro laudantium sequi. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit.
-              </p>
               <div className="breadcrumb-block">
-                <ol className="breadcrumb">
+                <ol className="breadcrumb justify-content-center">
                   <li className="breadcrumb-item">
                     <Link to="/"> Home </Link>
                   </li>

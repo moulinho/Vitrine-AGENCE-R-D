@@ -61,7 +61,7 @@
     transform: translateY(0); /* Ends at its normal position and size */
     opacity: 1; /* Fully visible */
   }
-}
+}   
 
 .zoom-from-bottom-to-up {
   animation: zoomFromBottomToUp 3s cubic-bezier(0.68, -0.55, 0.27, 1.55)

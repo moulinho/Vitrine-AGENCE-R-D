@@ -6,7 +6,7 @@ const Aside = () => {
         { id: 2, src: "/img/image9.png", alt: "Logo 2" },
         { id: 3, src: "/img/image10.jpg", alt: "Logo 3" },
         { id: 4, src: "/img/image11.jpg", alt: "Logo 4" },
-        // { id: 5, src: "/img/logo-03.png", alt: "Logo 5" },
+        // { id: 5, src: "/img/logo-03.png", alt: "Logo 5" },   
       ];
   return (
     <aside className="content-block">

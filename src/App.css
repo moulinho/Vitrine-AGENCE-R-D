@@ -32,7 +32,7 @@
 }
 
 .bsb-hero-6 > .row {
-  height:730px;
+  min-height:100vh;
 }
 
 @keyframes zoomIn {
@@ -130,7 +130,7 @@
   background-position: center center; /* Centre l'image horizontalement et verticalement */
   background-repeat: no-repeat;
   width: 100vw;
-  height: 100vh; /* Hauteur de l'écran */
+  height: inherit; /* Hauteur de l'écran */
   animation: zoomInCenter 10s ease-out forwards;
 }
 
